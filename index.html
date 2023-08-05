@@ -2,110 +2,131 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joyerias Big Ben</title>
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="shortcut icon" href="resources/favicon.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Red+Hat+Display:ital,wght@1,300&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joyerias Big Ben</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="shortcut icon" href="resources/favicon.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Red+Hat+Display:ital,wght@1,300&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-    <main>
-        <div class="cajaPadre">
-            <div class="cajaHijo">
-                <img src="resources/phone.png" alt="telefono">
-                <p>+(57) 311 123 4567</p>
-            </div>
-            <div class="cajaHijo">
-                <img src="resources/email.png" alt="nuestro coreo">
-                <p>ventas@joyeriasbigben.com</p>
-            </div>
-            <div class="cajaHijo margin1">
-                <img src="resources/user.png" alt="ingresar usuario">
-                <p>log in</p>
-            </div>
-            <div class="cajaHijo">
-                <img src="resources/bitcoin2.png" alt="convertidor de moneda">
-                <p>btc -usd</p>
-            </div>
-        </div>
-        <!----------------------------------------------------TITULO Y MENU------------------------------------------------------>
-        <header>
-            <h1>Joyerias Big Ben</h1>
-            <h2>Brilla Contigo</h2>
-        </header>
-        <nav class="navegador">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="html/catalogo.html">Catalogo</a></li>
-                <li><a href="html/nosotros.html">Nosotros</a></li>
-                <li><a href="html/ubicacion.html">Ubicacion</a></li>
-                <li><a href="html/ayuda.html">Ayuda</a></li>
-            </ul>
-        </nav>
 
-        <!-------------------------------------------------------CONTENIDO------------------------------------------------------->
-        <h3>Nueva Coleccion</h3>
-        <h4 class="shines">SHINES</h4>
-        <div class="videoIndex">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/BqPoCq4Y0yk"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </div>
-        <h4>Lo mas vendido</h4>
-
-        <div class="contenedorProductosIndex">
-            <div class="producto">
-                <img class="imgproducto" src="resources/conjunto.png" alt="conjunto en plata">
-                <p>Conjunto en plata con esferas</p>
-                <p>96.000</p>
-                <p>15% de descuento pagando con Bitcoin</p>
-            </div>
-            <div class="producto">
-                <img class="imgproducto" src="resources/cadena.png" alt="cadena en plata">
-                <p>Cadena en plata con murano</p>
-                <p>89.500</p>
-                <p>15% de descuento pagando con Bitcoin</p>
-            </div>
-        </div>
-        <!-------------------------------------------------INFORMACION ADICIONAL------------------------------------------------->
-        <aside class="divisor"></aside>
-
-        <div class="padreInfo">
-            <div class="info">
-                <img class="imgInfo" src="resources/delivery.png" alt="envios">
-                <p class="textoInfo">Envíos a Todo el País Rápidos y Seguros!</p>
-            </div>
-            <div class="info">
-                <img class="imgInfo" src="resources/devoluciones.png" alt="devoluciones">
-                <p class="textoInfo">Cambios y Devoluciones Fáciles y Sin Vueltas!</p>
-            </div>
-        </div>
-        <aside></aside>
-        <div class="padreInfo2">
-            <div class="info">
-                <img class="imgInfo" src="resources/bitcoin.png" alt="pagos con bitcoin">
-                <p class="textoInfo">Puedes comprar con las comisiones mas bajas del mercado atraves de la red
-                    lightning!</p>
-            </div>
-        </div>
-        
-        <!----------------------------------------------- chat WhatsApp ----------------------------------------------->
-        <a href="https://web.whatsapp.com/" target="_blank">
-            <img class="whatsapp" src="resources/whatsapp.png" alt="chat whatsapp">
+  <!----------------------------------------------------TITULO Y MENU------------------------------------------------------>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h1>Joyerias Big Ben</h1>
+          <h2>Brilla Contigo</h2>
         </a>
-        <!---------------------------------------------------------FOOTER--------------------------------------------------------->
-        <footer>
-            <p class="footer">Copyright Joyerias BIG BEN - 2023. Todos los derechos reservados. Defensa de las y los
-                consumidores.</p>
-        </footer>
-    </main>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav  navegador">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/catalogo.html">Catalogo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/ubicacion.html">Ubicacion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="html/ayuda.html">Ayuda</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <aside class="divisor1"></aside>
+  <!-------------------------------------------------------CONTENIDO------------------------------------------------------->
+  <h3 class="secciones">Nueva Coleccion</h3>
+  <aside class="divisor1"></aside>
+  <div class="nuevaColeccion">
+    <h4 class="shines">SHINES</h4>
+    <div class="videoIndex">
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/BqPoCq4Y0yk" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe> -->
+    </div>
+  </div>
+  <aside class="divisor"></aside>
+  <div class="divColeccion">
+    <p class="textoColeccion">Nuestra experiencia por mas de 30 años nos ha permitido perfeccionar nuestras tecnicas en
+      el arte de la joyeria. Ahora te brindamos nuestra coleccion mas personal y elegante con diseños vanguardistas asi
+      como los materiales de los cuales estan hechas nuestras piezas.</p>
+    <p class="textoColeccion">La plata, el oro y el titanio se unen creando accesorios sutiles si dejar indiferente a
+      nadie, asi como una selecta coleccion de piedras naturales te permitiran destacar en cualquier entorno. </p>
+  </div>
+  <aside class="divisor"></aside>
+  <h4>Lo mas vendido</h4>
+
+  <div class="contenedorProductosIndex">
+    <div class="producto">
+      <img class="imgproducto" src="../resources/cadena.png" alt="cadena en plata">
+      <p class="textoProducto">Cadena en plata con murano</p>
+      <p class="textoProducto">96.000</p>
+      <p class="textoProducto">15% de descuento pagando con Bitcoin</p>
+      <button class="boton"> Comprar </button>
+    </div>
+    <div class="producto">
+      <img class="imgproducto" src="../resources/conjunto.png" alt="conjunto en plata">
+      <p class="textoProducto">Conjunto en plata con esferas</p>
+      <p class="textoProducto">89.500</p>
+      <p class="textoProducto">15% de descuento pagando con Bitcoin</p>
+      <button class="boton"> Comprar </button>
+    </div>
+  </div>
+  <!-------------------------------------------------INFORMACION ADICIONAL------------------------------------------------->
+  <aside class="divisor"></aside>
+
+  <div class="padreInfo">
+    <div class="info">
+      <img class="imgInfo" src="resources/delivery.png" alt="envios">
+      <p class="textoInfo">Envíos a Todo el País Rápidos y Seguros!</p>
+    </div>
+    <div class="info">
+      <img class="imgInfo" src="resources/devoluciones.png" alt="devoluciones">
+      <p class="textoInfo">Cambios y Devoluciones Fáciles y Sin Vueltas!</p>
+    </div>
+  </div>
+  <aside></aside>
+  <div class="padreInfo2">
+    <div class="info">
+      <img class="imgInfo" src="resources/bitcoin.png" alt="pagos con bitcoin">
+      <p class="textoInfo">Puedes comprar con las comisiones mas bajas del mercado atraves de la red
+        lightning!</p>
+    </div>
+  </div>
+
+  <!----------------------------------------------- chat WhatsApp ----------------------------------------------->
+  <!-- <a href="https://web.whatsapp.com/" target="_blank">
+      <img class="whatsapp" src="resources/whatsapp.png" alt="chat whatsapp">
+    </a> -->
+  <!---------------------------------------------------------FOOTER--------------------------------------------------------->
+  <footer>
+    <p class="footer">Copyright Joyerias BIG BEN - 2023. Todos los derechos reservados. Defensa de las y los
+      consumidores.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
