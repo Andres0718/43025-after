@@ -10,38 +10,6 @@ body {
     font-family: 'Red Hat Display', sans-serif;
 }
 
-.whatsapp {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    width: 3rem;
-    height: 3rem;
-}
-
-.cajaPadre {
-    width: auto;
-    height: 31px;
-    margin: auto;
-    background-color: rgb(184, 184, 184);
-    display: flex;
-    justify-content: center;
-
-}
-
-.cajaHijo {
-    height: 30px;
-    width: 360px;
-    flex-direction: row;
-    align-self: stretch;
-
-}
-
-.cajaHijo p {
-    display: inline;
-    text-transform: uppercase;
-    align-self: stretch;
-}
-
 .margin1 {
     width: 280px;
     margin-left: 18px;
@@ -51,26 +19,27 @@ header {
     background-color: whitesmoke;
 }
 
-.textoColeccion {
-    text-align: center;
-    font-size: 1.8rem;
-    margin: auto;
+.navegador {
+    font-size: 1.5rem;
+    padding: 3rem;
 }
 
-@media(min-width:200px) and (max-width:450px) {
-    .textoColeccion {
-        font-size: 1.3rem;
-        text-align: center;
-        margin: auto;
-    }
+.navegador li a:hover {
+    text-decoration: underline;
 }
 
-@media(min-width:450px) and (max-width:750px) {
-    .textoColeccion {
-        font-size: 1.5rem;
-        text-align: center;
-        margin: auto;
-    }
+li {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /* *******************************************************************************************************/
@@ -143,12 +112,6 @@ header {
     cursor: pointer;
 }
 
-.divisor2 {
-    margin: 15rem;
-    border: none;
-
-}
-
 /* ***************************************************************************************************************** */
 /* *****************************************************UBICACION************************************************* */
 .descripcionMap {
@@ -210,6 +173,51 @@ header {
 /* ************************************************************************************************************** */
 /* ****************************************************INDEX**************************************************** */
 
+.nuevaColeccion {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width:990px) {
+    .nuevaColeccion {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+.shines {
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    text-align: center;
+    color: rgb(63, 63, 63);
+    height: auto;
+    line-height: auto;
+    margin: auto;
+}
+
+.textoColeccion {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: auto;
+}
+
+@media(min-width:200px) and (max-width:450px) {
+    .textoColeccion {
+        font-size: 1.3rem;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+@media(min-width:450px) and (max-width:750px) {
+    .textoColeccion {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: auto;
+    }
+}
 
 .padreInfo {
     display: grid;
@@ -246,19 +254,6 @@ header {
     }
 }
 
-.divisor {
-    width: 100%;
-    height: 1px;
-    background-color: rgb(179, 179, 179);
-    margin-bottom: 8rem;
-    margin-top: 6rem;
-}
-.divisor1{
-    width: 100%;
-    margin-bottom: 6rem;
-    margin-top: 6rem;
-}
-
 
 /* ****************************************************************************************************************** */
 /* ***********************************************DISEÑO DE TEXTO Y MENU********************************************** */
@@ -276,9 +271,6 @@ h2 {
     margin: auto;
 
 }
-
-/* ****************************************************************************REPARAR**************************************************************************** */
-
 h3 {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
@@ -288,6 +280,7 @@ h3 {
     margin-bottom: 3rem;
 
 }
+
 .secciones::first-letter{
     color: rgb(97, 97, 97);
     font-size: 5.2rem;
@@ -312,59 +305,35 @@ p {
     text-align: left;
     color: rgb(63, 63, 63);
 }
-
-.navegador {
-    font-size: 1.5rem;
-    padding: 3rem;
+.divisor {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(179, 179, 179);
+    margin-bottom: 8rem;
+    margin-top: 6rem;
+}
+.divisor1{
+    width: 100%;
+    margin-bottom: 6rem;
+    margin-top: 6rem;
 }
 
-.navegador li a:hover {
-    text-decoration: underline;
-}
-
-li {
-    list-style: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    display: inline-block;
-    margin-left: 10px;
-    font-family: 'Red Hat Display', sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-.nuevaColeccion {
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-@media (max-width:990px) {
-    .nuevaColeccion {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-}
-
-.shines {
-    font-family: 'Playfair Display', serif;
-    font-size: 5rem;
-    text-align: center;
-    color: rgb(63, 63, 63);
-    height: auto;
-    line-height: auto;
-    margin: auto;
-}
+/* ********************************************************************************************************** */
+/* **************************************************FOOTER************************************************** */
 
 .footer {
     text-align: center;
     font-size: 1rem;
     margin-top: 200px;
 }
+.whatsapp {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 3rem;
+    height: 3rem;
+}
+
 
 .redes {
     margin-left: 30px;
