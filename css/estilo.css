@@ -9,11 +9,7 @@ body {
     background-color: whitesmoke;
     font-family: 'Red Hat Display', sans-serif;
 }
-/* 
-.margin1 {
-    width: 280px;
-    margin-left: 18px;
-} */
+
 /*  ******************************************************************************************************** */
 /* ************************************************ HEADER ************************************************* */
 header {
@@ -45,25 +41,22 @@ a {
 
 /* ********************************************************************************************************************** */
 /* ***********************************************NORMAS GENERALES DE TEXTO********************************************** */
-.secciones{
+.encabezado{
+    margin: 0%;
+}
+.secciones {
     margin: 0;
 }
-.divisor1{
+
+.divisor1 {
     width: 100%;
     margin-bottom: 6rem;
     margin-top: 6rem;
 }
 
-.secciones::first-letter{
+.secciones::first-letter {
     color: rgb(97, 97, 97);
     font-size: 5.2rem;
-}
-.divisor {
-    width: 100%;
-    height: 1px;
-    background-color: rgb(179, 179, 179);
-    margin-bottom: 8rem;
-    margin-top: 6rem;
 }
 
 h1 {
@@ -79,6 +72,7 @@ h2 {
     margin: auto;
 
 }
+
 h3 {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
@@ -108,7 +102,6 @@ p {
     text-align: left;
     color: rgb(63, 63, 63);
 }
-
 /* ************************************************************************************************************** */
 /* ****************************************************INDEX**************************************************** */
 
@@ -135,7 +128,16 @@ p {
     line-height: auto;
     margin: auto;
 }
-
+.divColeccion{
+    margin: 0%;
+}
+.divisor {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(179, 179, 179);
+    margin-bottom: 8rem;
+    margin-top: 6rem;
+}
 .textoColeccion {
     text-align: center;
     font-size: 1.8rem;
@@ -157,6 +159,9 @@ p {
         margin: auto;
     }
 }
+.masVendido{
+    margin-bottom: 8rem;
+}
 .productosMasVendidos {
     width: auto;
     display: grid;
@@ -165,7 +170,7 @@ p {
     gap: 15rem 2rem;
 }
 
-@media (min-width:200px) and (max-width:450px) {
+@media (min-width:200px) and (max-width:550px) {
     .productosMasVendidos {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -178,15 +183,21 @@ p {
 }
 
 .imgProdIndex {
-    width: 256px;
-    height: 256px;
+    width: 300px;
+    height: 300px;
     cursor: pointer;
     margin: auto;
     border-radius: 15%;
 }
 
-.textoProdIndex {
+@media (max-width:750px) {
+    .imgProdIndex {
+        width: 256px;
+        height: 256px;
+    }
+}
 
+.textoProdIndex {
     text-align: center;
 }
 
@@ -202,10 +213,12 @@ p {
 }
 
 .botonProdIndex:hover {
-    background-color:  rgb(252, 236, 146);
+    background-color: rgb(252, 236, 146);
     cursor: pointer;
 }
-
+.infoAdicionalIndex{
+    width: 100%;
+}
 .padreInfo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -307,10 +320,26 @@ p {
     margin-left: 1rem;
     margin-right: 1rem;
 }
+.textoNosotros{
+    margin: 0%;
+}
+.formNosotros {
+    font-family: 'Playfair Display', serif;
+    size: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
 
-.contenedorRedes{
+.formularioNosotros {
+    display: block;
+    margin-bottom: 30px;
+}
+
+
+.contenedorRedes {
     margin: 0;
 }
+
 .social {
     text-align: center;
 }
@@ -319,6 +348,7 @@ p {
     display: flex;
     justify-content: center;
 }
+
 .redes {
     margin-left: 30px;
 }
@@ -332,7 +362,9 @@ p {
 
 /* *************************************************************************************************************** */
 /* *****************************************************AYUDA***************************************************** */
-
+.formAyuda{
+    margin: 0%;
+}
 .descripcionAyuda {
     text-align: center;
     font-size: 1.5rem;
@@ -364,6 +396,9 @@ p {
     text-align: center;
     font-size: 1rem;
     margin-top: 200px;
+}
+.botonWhatsapp{
+    margin: 0%;
 }
 .whatsapp {
     position: fixed;
