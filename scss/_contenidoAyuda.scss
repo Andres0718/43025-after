@@ -1,0 +1,29 @@
+/* *************************************************** AYUDA *************************************************** */
+.formAyuda {
+    margin: 0%;
+  
+    .descripcionAyuda {
+      text-align: center;
+      font-size: 1.5rem;
+      margin: 30px;
+    }
+  
+    .form {
+      font-family: 'Playfair Display', serif;
+      size: 3rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  
+    .formulario {
+      display: block;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (min-width: 200px) and (max-width: 750px) {
+    .textArea {
+      width: 100%;
+    }
+  }
+  

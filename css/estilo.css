@@ -1,409 +1,361 @@
+/* **************************************** NORMAS GENERALES Y ENCABEZADO **************************************** */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: whitesmoke;
-    font-family: 'Red Hat Display', sans-serif;
+  background-color: whitesmoke;
+  font-family: "Red Hat Display", sans-serif;
 }
 
-/*  ******************************************************************************************************** */
-/* ************************************************ HEADER ************************************************* */
-header {
-    background-color: whitesmoke;
+.encabezado {
+  margin: 0%;
 }
-
-.navegador {
-    font-size: 1.5rem;
-    padding: 3rem;
+.encabezado .secciones {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  text-align: left;
+  color: rgb(63, 63, 63);
+  padding-left: 2rem;
+  margin-bottom: 3rem;
 }
-
-.navegador li a:hover {
-    text-decoration: underline;
+.encabezado .divisor1 {
+  width: 100%;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
 }
-
-li {
-    list-style: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    display: inline-block;
-    margin-left: 10px;
-    font-family: 'Red Hat Display', sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-/* ********************************************************************************************************************** */
-/* ***********************************************NORMAS GENERALES DE TEXTO********************************************** */
-.encabezado{
-    margin: 0%;
-}
-.secciones {
-    margin: 0;
-}
-
-.divisor1 {
-    width: 100%;
-    margin-bottom: 6rem;
-    margin-top: 6rem;
-}
-
-.secciones::first-letter {
-    color: rgb(97, 97, 97);
-    font-size: 5.2rem;
+.encabezado .secciones::first-letter {
+  color: rgb(97, 97, 97);
+  font-size: 5.2rem;
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
-    color: rgb(63, 63, 63);
-    margin: auto;
-
+  font-family: "Playfair Display", serif;
+  color: rgb(63, 63, 63);
+  margin: auto;
 }
 
 h2 {
-    font-family: 'Red Hat Display', sans-serif;
-    color: rgb(63, 63, 63);
-    margin: auto;
-
-}
-
-h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    text-align: left;
-    color: rgb(63, 63, 63);
-    padding-left: 2rem;
-    margin-bottom: 3rem;
-
+  font-family: "Red Hat Display", sans-serif;
+  color: rgb(63, 63, 63);
+  margin: auto;
 }
 
 h4 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  text-align: center;
 }
 
 h5 {
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 1.5rem;
-    text-align: left;
-    color: rgb(63, 63, 63);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.5rem;
+  text-align: left;
+  color: rgb(63, 63, 63);
 }
 
 p {
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 1.2rem;
-    text-align: left;
-    color: rgb(63, 63, 63);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.2rem;
+  text-align: left;
+  color: rgb(63, 63, 63);
 }
-/* ************************************************************************************************************** */
-/* ****************************************************INDEX**************************************************** */
-
-.nuevaColeccion {
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-@media (max-width:990px) {
-    .nuevaColeccion {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-}
-
-.shines {
-    font-family: 'Playfair Display', serif;
-    font-size: 5rem;
-    text-align: center;
-    color: rgb(63, 63, 63);
-    height: auto;
-    line-height: auto;
-    margin: auto;
-}
-.divColeccion{
-    margin: 0%;
-}
-.divisor {
-    width: 100%;
-    height: 1px;
-    background-color: rgb(179, 179, 179);
-    margin-bottom: 8rem;
-    margin-top: 6rem;
-}
-.textoColeccion {
-    text-align: center;
-    font-size: 1.8rem;
-    margin: auto;
-}
-
-@media(min-width:200px) and (max-width:450px) {
-    .textoColeccion {
-        font-size: 1.3rem;
-        text-align: center;
-        margin: auto;
-    }
-}
-
-@media(min-width:450px) and (max-width:750px) {
-    .textoColeccion {
-        font-size: 1.5rem;
-        text-align: center;
-        margin: auto;
-    }
-}
-.masVendido{
-    margin-bottom: 8rem;
-}
-.productosMasVendidos {
-    width: auto;
-    display: grid;
-    margin: auto;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15rem 2rem;
-}
-
-@media (min-width:200px) and (max-width:550px) {
-    .productosMasVendidos {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-.productoIndex {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-}
-
-.imgProdIndex {
-    width: 300px;
-    height: 300px;
-    cursor: pointer;
-    margin: auto;
-    border-radius: 15%;
-}
-
-@media (max-width:750px) {
-    .imgProdIndex {
-        width: 256px;
-        height: 256px;
-    }
-}
-
-.textoProdIndex {
-    text-align: center;
-}
-
-.botonProdIndex {
-    width: 10rem;
-    margin: auto;
-    margin-top: 2rem;
-    background-color: rgb(182, 182, 182);
-    color: black;
-    border-radius: 1rem;
-    font-family: 'Red Hat Display', sans-serif;
-    text-transform: uppercase;
-}
-
-.botonProdIndex:hover {
-    background-color: rgb(252, 236, 146);
-    cursor: pointer;
-}
-.infoAdicionalIndex{
-    width: 100%;
-}
-.padreInfo {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    margin-bottom: 5rem;
-}
-
-.info {
-    text-align: center;
-}
-
-.padreInfo2 {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.textoInfo {
-    text-align: center;
-}
-
-/* *******************************************************************************************************/
-/* *****************************************************CATALOGO******************************************/
-.productosCatalogo {
-    width: auto;
-    display: grid;
-    margin: auto;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15rem 2rem;
-}
-
-@media (min-width:200px) and (max-width:450px) {
-    .productosCatalogo {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media (min-width:451px) and (max-width:750px) {
-    .productosCatalogo {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (min-width:751px) and (max-width:950px) {
-    .productosCatalogo {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-
-.producto {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-}
-
-.imgproducto {
-    width: 256px;
-    height: 256px;
-    cursor: pointer;
-    margin: auto;
-    border-radius: 15%;
-}
-
-@media(min-width:450px) and (max-width:950px) {
-    .imgproducto {
-        width: 200px;
-        height: 200px;
-    }
-}
-
-.textoProducto {
-
-    text-align: center;
-}
-
-.boton {
-    width: 10rem;
-    margin: auto;
-    margin-top: 2rem;
-    background-color: rgb(182, 182, 182);
-    color: black;
-    border-radius: 1rem;
-    font-family: 'Red Hat Display', sans-serif;
-    text-transform: uppercase;
-}
-
-.boton:hover {
-    background-color: rgb(252, 236, 146);
-    cursor: pointer;
-}
-
-/* ************************************************************************************************************** */
-/* ***************************************************NOSOTROS*************************************************** */
-.contenedorNosotros {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-.textoNosotros{
-    margin: 0%;
-}
-.formNosotros {
-    font-family: 'Playfair Display', serif;
-    size: 3rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-.formularioNosotros {
-    display: block;
-    margin-bottom: 30px;
-}
-
-
-.contenedorRedes {
-    margin: 0;
-}
-
-.social {
-    text-align: center;
-}
-
-.redesSociales {
-    display: flex;
-    justify-content: center;
-}
-
-.redes {
-    margin-left: 30px;
-}
-
-/* ***************************************************************************************************************** */
-/* *****************************************************UBICACION************************************************* */
-.descripcionMap {
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-/* *************************************************************************************************************** */
-/* *****************************************************AYUDA***************************************************** */
-.formAyuda{
-    margin: 0%;
-}
-.descripcionAyuda {
-    text-align: center;
-    font-size: 1.5rem;
-    margin: 30px;
-}
-
-.form {
-    font-family: 'Playfair Display', serif;
-    size: 3rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-
-@media (min-width:200px) and (max-width:750px) {
-    .textArea {
-        width: 100%;
-    }
-}
-
-.formulario {
-    display: block;
-    margin-bottom: 30px;
-}
-
-/* ********************************************************************************************************** */
-/* **************************************************FOOTER************************************************** */
 
 .footer {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 200px;
+}
+
+.botonWhatsapp {
+  margin: 0%;
+}
+.botonWhatsapp .whatsapp {
+  position: fixed;
+  right: 40px;
+  bottom: 30px;
+  width: 4rem;
+  height: 4rem;
+}
+
+/* ********************************************* HEADER ********************************************* */
+header {
+  background-color: whitesmoke;
+}
+header .navegador {
+  font-size: 1.5rem;
+  padding: 3rem;
+}
+header .navegador li a:hover {
+  text-decoration: underline;
+}
+header li {
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 10px;
+  font-family: "Red Hat Display", sans-serif;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+/* **************************************************** INDEX **************************************************** */
+.nuevaColeccion {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.nuevaColeccion .shines {
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+  text-align: center;
+  color: rgb(63, 63, 63);
+  height: auto;
+  line-height: auto;
+  margin: auto;
+}
+
+@media (max-width: 990px) {
+  .nuevaColeccion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+.divColeccion {
+  margin: 0%;
+}
+.divColeccion .divisor {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(179, 179, 179);
+  margin-bottom: 8rem;
+  margin-top: 6rem;
+}
+.divColeccion .textoColeccion {
+  text-align: center;
+  font-size: 1.8rem;
+  margin: auto;
+}
+
+@media (min-width: 200px) and (max-width: 450px) {
+  .textoColeccion {
+    font-size: 1.3rem;
     text-align: center;
-    font-size: 1rem;
-    margin-top: 200px;
+    margin: auto;
+  }
 }
-.botonWhatsapp{
-    margin: 0%;
+@media (min-width: 450px) and (max-width: 750px) {
+  .textoColeccion {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: auto;
+  }
 }
-.whatsapp {
-    position: fixed;
-    right: 30px;
-    bottom: 30px;
-    width: 3rem;
-    height: 3rem;
+.masVendido {
+  margin-bottom: 8rem;
 }
+.masVendido .productosMasVendidos {
+  width: auto;
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15rem 2rem;
+}
+@media (max-width: 550px) {
+  .masVendido .productosMasVendidos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.masVendido .productoIndex {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.masVendido .imgProdIndex {
+  width: 300px;
+  height: 300px;
+  cursor: pointer;
+  margin: auto;
+  border-radius: 15%;
+}
+.masVendido .textoProdIndex {
+  text-align: center;
+}
+.masVendido .botonProdIndex {
+  width: 10rem;
+  margin: auto;
+  margin-top: 2rem;
+  background-color: rgb(182, 182, 182);
+  color: black;
+  border-radius: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  text-transform: uppercase;
+}
+.masVendido .botonProdIndex:hover {
+  background-color: rgb(252, 236, 146);
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .imgProdIndex {
+    width: 256px;
+    height: 256px;
+  }
+}
+.infoAdicionalIndex {
+  width: 100%;
+}
+.infoAdicionalIndex .padreInfo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  margin-bottom: 5rem;
+}
+.infoAdicionalIndex .info {
+  text-align: center;
+}
+.infoAdicionalIndex .padreInfo2 {
+  display: flex;
+  flex-direction: column;
+}
+.infoAdicionalIndex .textoInfo {
+  text-align: center;
+}
+
+/* ******************************************************* CATALOGO ******************************************************* */
+.productosCatalogo {
+  width: auto;
+  display: grid;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15rem 2rem;
+}
+.productosCatalogo .producto {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.productosCatalogo .imgproducto {
+  width: 256px;
+  height: 256px;
+  cursor: pointer;
+  margin: auto;
+  border-radius: 15%;
+}
+.productosCatalogo .textoProducto {
+  text-align: center;
+}
+.productosCatalogo .boton {
+  width: 10rem;
+  margin: auto;
+  margin-top: 2rem;
+  background-color: rgb(182, 182, 182);
+  color: black;
+  border-radius: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  text-transform: uppercase;
+}
+.productosCatalogo .boton:hover {
+  background-color: rgb(252, 236, 146);
+  cursor: pointer;
+}
+
+@media (min-width: 200px) and (max-width: 450px) {
+  .productosCatalogo {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 451px) and (max-width: 750px) {
+  .productosCatalogo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 751px) and (max-width: 950px) {
+  .productosCatalogo {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 450px) and (max-width: 950px) {
+  .imgproducto {
+    width: 200px;
+    height: 200px;
+  }
+}
+/* *************************************************** NOSOTROS *************************************************** */
+.contenedorNosotros {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.contenedorNosotros .textoNosotros {
+  margin: 0%;
+}
+.contenedorNosotros .formNosotros {
+  font-family: "Playfair Display", serif;
+  size: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.contenedorNosotros .formularioNosotros {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.contenedorRedes {
+  margin: 0;
+}
+.contenedorRedes .social {
+  text-align: center;
+}
+.contenedorRedes .redesSociales {
+  display: flex;
+  justify-content: center;
+}
+.contenedorRedes .redes {
+  margin-left: 30px;
+}
+
+/* *************************************************** UBICACION *************************************************** */
+.map {
+  margin: 0%;
+}
+.map .descripcionMap {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* *************************************************** AYUDA *************************************************** */
+.formAyuda {
+  margin: 0%;
+}
+.formAyuda .descripcionAyuda {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 30px;
+}
+.formAyuda .form {
+  font-family: "Playfair Display", serif;
+  size: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.formAyuda .formulario {
+  display: block;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 200px) and (max-width: 750px) {
+  .textArea {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

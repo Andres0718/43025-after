@@ -1,0 +1,84 @@
+/* **************************************** NORMAS GENERALES Y ENCABEZADO **************************************** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: whitesmoke;
+    font-family: 'Red Hat Display', sans-serif;
+  }
+  
+.encabezado {
+    margin: 0%;
+  
+    .secciones {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      text-align: left;
+      color: rgb(63, 63, 63);
+      padding-left: 2rem;
+      margin-bottom: 3rem;
+    }
+  
+    .divisor1 {
+      width: 100%;
+      margin-bottom: 6rem;
+      margin-top: 6rem;
+    }
+  
+    .secciones::first-letter {
+      color: rgb(97, 97, 97);
+      font-size: 5.2rem;
+    }
+  }
+  
+  h1 {
+    font-family: 'Playfair Display', serif;
+    color: rgb(63, 63, 63);
+    margin: auto;
+  }
+  
+  h2 {
+    font-family: 'Red Hat Display', sans-serif;
+    color: rgb(63, 63, 63);
+    margin: auto;
+  }
+  
+  h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  h5 {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    color: rgb(63, 63, 63);
+  }
+  
+  p {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.2rem;
+    text-align: left;
+    color: rgb(63, 63, 63);
+  }
+  .footer {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 200px;
+  }
+  
+  .botonWhatsapp {
+    margin: 0%;
+  
+    .whatsapp {
+      position: fixed;
+      right: 40px;
+      bottom: 30px;
+      width: 4rem;
+      height: 4rem;
+    }
+  }

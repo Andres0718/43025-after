@@ -1,0 +1,68 @@
+/* ******************************************************* CATALOGO ******************************************************* */
+.productosCatalogo {
+    width: auto;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15rem 2rem;
+  
+    .producto {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+    }
+  
+    .imgproducto {
+      width: 256px;
+      height: 256px;
+      cursor: pointer;
+      margin: auto;
+      border-radius: 15%;
+    }
+  
+    .textoProducto {
+      text-align: center;
+    }
+  
+    .boton {
+      width: 10rem;
+      margin: auto;
+      margin-top: 2rem;
+      background-color: rgb(182, 182, 182);
+      color: black;
+      border-radius: 1rem;
+      font-family: 'Red Hat Display', sans-serif;
+      text-transform: uppercase;
+  
+      &:hover {
+        background-color: rgb(252, 236, 146);
+        cursor: pointer;
+      }
+    }
+  }
+  
+  @media (min-width: 200px) and (max-width: 450px) {
+    .productosCatalogo {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media (min-width: 451px) and (max-width: 750px) {
+    .productosCatalogo {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 751px) and (max-width: 950px) {
+    .productosCatalogo {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 450px) and (max-width: 950px) {
+    .imgproducto {
+      width: 200px;
+      height: 200px;
+    }
+  }
+  
