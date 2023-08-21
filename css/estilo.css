@@ -112,7 +112,25 @@ header a {
 @media (max-width: 1000px) {
   .imgCarrusel {
     width: 100%;
-    height: 30rem;
+    height: 20rem;
+  }
+}
+@media (max-width: 800px) {
+  .imgCarrusel {
+    width: 100%;
+    height: 17rem;
+  }
+}
+@media (max-width: 650px) {
+  .imgCarrusel {
+    width: 100%;
+    height: 14rem;
+  }
+}
+@media (max-width: 500px) {
+  .imgCarrusel {
+    width: 100%;
+    height: 10rem;
   }
 }
 .divColeccion {
