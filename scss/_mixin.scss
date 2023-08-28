@@ -1,0 +1,10 @@
+/* **************************************************** MIXIN **************************************************** */
+@mixin footer{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 200px;
+}
+
+.footer{
+    @include footer;
+}

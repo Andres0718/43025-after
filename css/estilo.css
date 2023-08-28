@@ -63,12 +63,12 @@ p {
   color: rgb(63, 63, 63);
 }
 
-.footer {
-  text-align: center;
-  font-size: 1rem;
-  margin-top: 200px;
-}
-
+/*.footer {
+   text-align: center;
+   font-size: 1rem;
+   margin-top: 200px;
+ }
+ */
 .botonWhatsapp {
   margin: 0%;
 }
@@ -362,6 +362,12 @@ header a {
   .textArea {
     width: 100%;
   }
+}
+/* **************************************************** MIXIN **************************************************** */
+.footer {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 200px;
 }
 
 /*# sourceMappingURL=estilo.css.map */
