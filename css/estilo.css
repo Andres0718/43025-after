@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background: linear-gradient(to top, #ffd755, whitesmoke, whitesmoke);
   font-family: "Red Hat Display", sans-serif;
 }
 
@@ -63,12 +63,6 @@ p {
   color: rgb(63, 63, 63);
 }
 
-/*.footer {
-   text-align: center;
-   font-size: 1rem;
-   margin-top: 200px;
- }
- */
 .botonWhatsapp {
   margin: 0%;
 }
@@ -204,7 +198,7 @@ header a {
   text-transform: uppercase;
 }
 .masVendido .botonProdIndex:hover {
-  background-color: rgb(252, 236, 146);
+  background-color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
@@ -268,7 +262,7 @@ header a {
   text-transform: uppercase;
 }
 .productosCatalogo .boton:hover {
-  background-color: rgb(252, 236, 146);
+  background-color: rgb(255, 255, 255);
   cursor: pointer;
 }
 
@@ -310,9 +304,31 @@ header a {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-.contenedorNosotros .formularioNosotros {
+.contenedorNosotros .formularioNosotros input {
+  height: 40px;
+  width: 50%;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.contenedorNosotros .botonNosotros {
+  margin: 15px 0;
+}
+.contenedorNosotros .botonNosotros button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
   display: block;
-  margin-bottom: 30px;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #dab22f, rgb(104, 95, 95));
+  cursor: pointer;
+}
+.contenedorNosotros .botonNosotros button:hover {
+  background-image: linear-gradient(to right, #d1ad36, rgb(48, 44, 44));
 }
 
 .contenedorRedes {
@@ -340,7 +356,12 @@ header a {
 
 /* *************************************************** AYUDA *************************************************** */
 .formAyuda {
-  margin: 0%;
+  margin: 0 28px;
+  border-radius: 10px;
+  padding: 28px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.6);
 }
 .formAyuda .descripcionAyuda {
   text-align: center;
@@ -353,9 +374,40 @@ header a {
   margin-left: 1rem;
   margin-right: 1rem;
 }
-.formAyuda .formulario {
+.formAyuda .formulario:nth-child(2n) {
+  justify-content: end;
+}
+.formAyuda .formulario label {
+  width: 95%;
+  color: rgb(63, 63, 63);
+  font-weight: bold;
+  margin: 5px 0;
+}
+.formAyuda .formulario input {
+  height: 40px;
+  width: 95%;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.formAyuda .boton {
+  margin: 15px 0;
+}
+.formAyuda .boton button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
   display: block;
-  margin-bottom: 30px;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #dab22f, rgb(104, 95, 95));
+  cursor: pointer;
+}
+.formAyuda .boton button:hover {
+  background-image: linear-gradient(to right, #d1ad36, rgb(48, 44, 44));
 }
 
 @media (min-width: 200px) and (max-width: 750px) {

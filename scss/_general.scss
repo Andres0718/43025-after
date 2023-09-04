@@ -6,7 +6,7 @@
   }
   
   body {
-    background-color: whitesmoke;
+    background: linear-gradient(to top, #ffd755,whitesmoke,whitesmoke);
     font-family: 'Red Hat Display', sans-serif;
   }
   
@@ -65,12 +65,6 @@
     text-align: left;
     color: rgb(63, 63, 63);
   }
- /*.footer {
-    text-align: center;
-    font-size: 1rem;
-    margin-top: 200px;
-  }
-  */
   .botonWhatsapp {
     margin: 0%;
   
